@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI";
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.greenBackground{
+    background-color: #4dff4d;
+    width: 0;
+    height: 100vh;
+    transition: .3s;
+}
+
+.blueBackground{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    transition: .3s;
+ }
+
+.gameField{
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 2px #fff;
+    background: #fff;
+}
+
+.cell{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hole{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 10px skyblue,  0 0 10px 50px aqua;
+}
+
+.green{
+    background: green;
+    box-shadow: 0px 0px 15px 2px #fff inset;
+    transition: .4s;
+}
+
+.blue{
+    background: blue;
+    box-shadow: 0px 0px 15px 2px #fff inset;
+    transition: .4s;
+}
+
+.winnerField{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.4);
+}
+
+.winner{
+    height: 200px;
+    width: 600px;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.winBtn{
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+    cursor: pointer;
+}
